@@ -155,4 +155,18 @@ Home-Finder/
 
 ---
 
+## Screenshots
+
+### Login
+![Home Page](assets/Login.png)
+
+### Registration
+![Registration Page](assets/Registration.png)
+
+### Apartment Owner
+![Owner Apartment Page](assets/OwnerApartments.png)
+
+### Registration
+![Renter Apartments Page](assets/RenterApartments.png)
+
 
