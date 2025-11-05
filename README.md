@@ -84,7 +84,7 @@ Home-Finder/
 
 3. **Set up the database**
    - Start XAMPP and ensure MySQL is running
-   - Create a database named `apartment_scheduling`
+   - Create a database named `homefinder`
    - The backend will automatically create the required tables on first run
 
 4. **Configure environment variables**
@@ -109,7 +109,7 @@ Home-Finder/
   DB_HOST=localhost
   DB_USER=root
   DB_PASSWORD=
-  DB_NAME=apartment_scheduling
+  DB_NAME=homefinder
   ```
 - The backend auto-creates all necessary tables on startup.
 
