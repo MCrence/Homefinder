@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-50: #e6f0ff;
+  --primary-100: #cce0ff;
+  --primary-200: #99c1ff;
+  --primary-300: #66a3ff;
+  --primary-400: #3384ff;
+  --primary-500: #0066ff;
+  --primary-600: #0052cc;
+  --primary-700: #003d99;
+  --primary-800: #002966;
+  --primary-900: #001433;
+  
+  --neutral-50: #f8fafc;
+  --neutral-100: #f1f5f9;
+  --neutral-200: #e2e8f0;
+  --neutral-300: #cbd5e1;
+  --neutral-400: #94a3b8;
+  --neutral-500: #64748b;
+  --neutral-600: #475569;
+  --neutral-700: #334155;
+  --neutral-800: #1e293b;
+  --neutral-900: #0f172a;
+  
+  --success-500: #10b981;
+  --warning-500: #f59e0b;
+  --error-500: #ef4444;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  @apply bg-gray-50 text-neutral-800;
+}
+
+.sidebar {
+  @apply fixed left-0 top-0 h-screen bg-neutral-800 text-white w-64 transition-all duration-300 ease-in-out z-10;
+}
+
+.page-container {
+  @apply ml-64 p-8 transition-all duration-300 ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    @apply w-0 -left-64;
+  }
+  .sidebar.open {
+    @apply w-64 left-0;
+  }
+  .page-container {
+    @apply ml-0;
+  }
+}
+
+.form-input {
+  @apply w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500;
+}
+
+.btn {
+  @apply px-4 py-2 rounded-md font-medium transition-all duration-200;
+}
+
+.btn-primary {
+  @apply bg-primary-500 text-white hover:bg-primary-600 focus:ring-2 focus:ring-primary-300;
+}
+
+.btn-secondary {
+  @apply bg-neutral-200 text-neutral-800 hover:bg-neutral-300 focus:ring-2 focus:ring-neutral-200;
+}
+
+.card {
+  @apply bg-white rounded-lg shadow-md overflow-hidden transition-all duration-200 hover:shadow-lg;
+}
