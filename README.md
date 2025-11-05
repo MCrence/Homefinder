@@ -166,7 +166,7 @@ Home-Finder/
 ### Apartment Owner
 ![Owner Apartment Page](assets/OwnerApartments.png)
 
-### Registration
+### Apartment Renter
 ![Renter Apartments Page](assets/RenterApartments.png)
 
 
